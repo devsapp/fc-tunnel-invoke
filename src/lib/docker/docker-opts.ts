@@ -42,7 +42,7 @@ export function resolveDockerUser({nasConfig, stage = 'run'}): string {
 
 export function transformMountsForToolbox(mounts) {
 
-  console.warn(`We detected that you are using docker toolbox. For a better experience, please upgrade 'docker for windows'.\nYou can refer to Chinese doc https://github.com/alibaba/funcraft/blob/master/docs/usage/installation-zh.md#windows-%E5%AE%89%E8%A3%85-docker or English doc https://github.com/alibaba/funcraft/blob/master/docs/usage/installation.md.\n`);
+  console.warn(`We detected that you are using docker toolbox. For a better experience, please upgrade 'docker for windows'.\nYou can refer to Chinese doc https://github.com/devsapp/fc/issues/867 .\n`);
 
   if (Array.isArray(mounts)) {
     return mounts.map(m => {
